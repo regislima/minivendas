@@ -14,3 +14,7 @@ Sistema de vendas pessoal feito com adianti framework
     - Navegue até o diretório do projeto;
     - Execute o comando 'php composer.phar install'. (O php deve estar instalado ou setado nas variáveis de ambiente)
 6 - Agora o projeto está pronto para rodar no seu servidor.
+
+Obs: Credenciais:
+    - Administrador: login: admin@admin.com senha: admin123
+    - Padrão: login: padrao@padrao.com senha: padrao123
