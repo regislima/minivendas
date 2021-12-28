@@ -1,0 +1,105 @@
+<!--[main]-->
+<div class="card">
+    <div class="card-header">
+        <div class="card-title">DETALHES DA VENDA</div>
+        <div class="header-actions">
+            <a class="btn btn-default" generator="adianti" href="index.php?class=VendaDetalhes&method=onClose&static=1" style="float: right;">
+                <i class="fas fa-times red" aria-hidden="true"></i>
+                Fechar
+            </a>
+            <a class="btn btn-default mr-2" generator="adianti" href="index.php?class=Pagamento&key={{uniqid}}" style="float: right;">
+                <i class="fab fa-bitcoin blue" aria-hidden="true"></i>
+                Pagamentos
+            </a>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col">
+                <label><b>CÓDIGO:</b></label><label>&nbsp;{{uniqid}}</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label><b>DATA DA VENDA:</b></label><label>&nbsp;date_format({{created_at}}, 'd/m/Y H:i:s')</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label><b>VALOR APURADO:</b></label><label>&nbsp;number_format({{valor_final}}, 2, ',', '.')</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label><b>VALOR PAGO:</b></label><label>&nbsp;number_format({{valor_pago}}, 2, ',', '.')</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label><b>VALOR DEVIDO:</b></label><label>&nbsp;number_format({{valor_devido}}, 2, ',', '.')</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label><b>SITUAÇÃO:</b></label><label>&nbsp;{{situacao}}</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label><b>LUCRO DA VENDA:</b></label><label>&nbsp;number_format({{lucro}}, 2, ',', '.')</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label><b>CUSTO DA VENDA:</b></label><label>&nbsp;number_format({{custo}}, 2, ',', '.')</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label><b>FORMA DE PAGAMENTO:</b></label><label>&nbsp;{{forma_pagamento}}</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label><b>CLIENTE:</b></label><label>&nbsp;{{cliente}}</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label><b>VENDEDOR:</b></label><label>&nbsp;{{usuario}}</label>
+            </div>
+        </div>
+   
+        <hr>
+        
+        <div class="table-responsive">
+            <table class="table">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">ProdID</th>
+                        <th scope="col">Produto</th>
+                        <th scope="col" style="text-align: center">Preço</th>
+                        <th scope="col" style="text-align: center">Qtde</th>
+                        <th scope="col" style="text-align: center">Subtotal</th>
+                        <th scope="col" style="text-align: center">Desconto</th>
+                        <th scope="col" style="text-align: center">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--[itens]-->
+                    <tr>
+                        <td>{{id_produto}}</td>
+                        <td>{{produto_nome}}</td>
+                        <td style="text-align: right">number_format({{preco_venda}}, 2, ',', '.')</td>
+                        <td style="text-align: right">{{quantidade}}</td>
+                        <td style="text-align: right">number_format({{preco_subtotal}}, 2, ',', '.')</td>
+                        <td style="text-align: right">number_format({{desconto}}, 2, ',', '.')</td>
+                        <td style="text-align: right">number_format({{preco_total}}, 2, ',', '.')</td>
+                    </tr>
+                    <!--[/itens]-->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!--[/main]-->

@@ -1,0 +1,70 @@
+<menu>
+    <menuitem label='Dashboard'>
+        <icon>fa:tachometer-alt fa-fw</icon>
+        <action>Dash</action>
+    </menuitem>
+    <menuitem label='Cadastros'>
+        <icon>fa:home fa-fw</icon>
+        <menu>
+            <menuitem label='Cidade'>
+                <icon>fas:city fa-fw</icon>
+                <action>CidadeFormList</action>
+            </menuitem>
+
+            <menuitem label='Produto'>
+                <icon>fas:dolly fa-fw</icon>
+                <action>ProdutoList</action>
+            </menuitem>
+            
+            <menuitem label='Cliente'>
+                <icon>fa:user-plus fa-fw</icon>
+                <action>ClienteList</action>
+            </menuitem>
+        </menu>
+    </menuitem>
+    <menuitem label='Despesas'>
+        <icon>fa:cash-register fa-fw</icon>
+        <menu>
+            <menuitem label='Dashboard'>
+                <icon>fa:tachometer-alt fa-fw</icon>
+                <action>DespesaDashboard</action>
+            </menuitem>
+            
+            <menuitem label='Ver Despesas'>
+                <icon>fa:file-invoice-dollar fa-fw</icon>
+                <action>DespesaList</action>
+            </menuitem>
+        </menu>
+    </menuitem>
+    <menuitem label='Vendas'>
+        <icon>fa:dollar-sign fa-fw</icon>
+        <menu>
+            <menuitem label='Dashboard'>
+                <icon>fa:tachometer-alt fa-fw</icon>
+                <action>VendaDashboard</action>
+            </menuitem>
+            
+            <menuitem label='Ver Vendas'>
+                <icon>fa:hand-holding-usd fa-fw</icon>
+                <action>VendaList</action>
+            </menuitem>
+        </menu>
+    </menuitem>
+    <menuitem label='Administrativo'>
+        <icon>fas:tools fa-fw</icon>
+        <menu>
+            <menuitem label='Usuários'>
+                <icon>fas:user fa-fw</icon>
+                <action>UsuarioList</action>
+            </menuitem>
+            <menuitem label='Gerar Chave'>
+                <icon>fas:puzzle-piece fa-fw</icon>
+                <action>ChaveRestGenerator</action>
+            </menuitem>
+        </menu>
+    </menuitem>
+    <menuitem label='Sair'>
+        <action>LoginForm#method=onLogout#static=1</action>
+        <icon>fas:sign-out-alt fa-fw</icon>
+    </menuitem>
+</menu>

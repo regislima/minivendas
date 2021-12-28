@@ -1,0 +1,50 @@
+<!--[main]-->
+<div class="card">
+    <div class="card-header">
+        <div class="card-title">{{title}}</div>
+        <div class="header-actions">
+            <a class="btn btn-default" generator="adianti" href="index.php?class=ProdutoDetalhes&method=onClose&static=1" style="float: right;">
+                <i class="fas fa-times red" aria-hidden="true"></i>
+                Fechar
+            </a>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col">
+                <label><b>CÓDIGO:</b></label><label>&nbsp;{{produto->id}}</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label><b>NOME:</b></label><label>&nbsp;{{produto->nome}}</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label><b>ESTOQUE:</b></label><label>&nbsp;{{produto->estoque}}</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label><b>ESTOQUE MÍNIMO:</b></label><label>&nbsp;{{produto->estoque_minimo}}</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label><b>PREÇO DE CUSTO:</b></label><label>&nbsp;number_format({{produto->preco_custo}}, 2, ',', '.')</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label><b>PREÇO DE VENDA:</b></label><label>&nbsp;number_format({{produto->preco_venda}}, 2, ',', '.')</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label><b>OBS:</b></label><label>&nbsp;{{produto->obs}}</label>
+            </div>
+        </div>
+    </div>
+</div>
+<!--[/main]-->

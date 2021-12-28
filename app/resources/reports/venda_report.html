@@ -1,0 +1,42 @@
+<!--[main]-->
+<div class="row">
+    <div class="col">
+        <img src="app/images/minivendas.png" alt="logo">
+    </div>
+    <div class="col">
+        <label>{{empresa_nome}}</label><br>
+        <label>{{empresa_endereco}}</label><br>
+        <label>{{empresa_telefone}}</label><br>
+        <label>{{empresa_cnpj}}</label>
+    </div>
+</div>
+   
+<hr>
+               
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col" style="text-align: center">ID</th>
+                <th scope="col" style="text-align: center">DATA DA VENDA</th>
+                <th scope="col" style="text-align: center">CLIENTE</th>
+                <th scope="col" style="text-align: center">VALOR</th>
+                <th scope="col" style="text-align: center">LUCRO</th>
+                <th scope="col" style="text-align: center">FORMA DE PAGAMENTO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--[vendas]-->
+            <tr>
+                <td style="text-align: center">{{id_venda}}</td>
+                <td style="text-align: center">{{data_venda}}</td>
+                <td style="text-align: center">{{cliente}}</td>
+                <td style="text-align: center">number_format({{valor_total}}, 2, ',', '.')</td>
+                <td style="text-align: center">number_format({{lucro}}, 2, ',', '.')</td>
+                <td style="text-align: center">number_format({{forma_pagamento}}, 2, ',', '.')</td>
+            </tr>
+            <!--[/vendas]-->
+        </tbody>
+    </table>
+</div>
+<!--[/main]-->

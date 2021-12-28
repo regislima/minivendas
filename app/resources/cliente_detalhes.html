@@ -1,0 +1,40 @@
+<!--[main]-->
+<div class="card">
+    <div class="card-header">
+        <div class="card-title">{{title}}</div>
+        <div class="header-actions">
+            <a class="btn btn-default" generator="adianti" href="index.php?class=ClienteDetalhes&method=onClose&static=1" style="float: right;">
+                <i class="fas fa-times red" aria-hidden="true"></i>
+                Fechar
+            </a>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col">
+                <label><b>CÓDIGO:</b></label><label>&nbsp;{{cliente->id}}</label>
+            </div>
+        </div>
+         <div class="row">
+            <div class="col">
+                <label><b>NOME:</b></label><label>&nbsp;{{cliente->nome}}</label>
+            </div>
+        </div>
+         <div class="row">
+            <div class="col">
+                <label><b>ENDEREÇO:</b></label><label>&nbsp;{{cliente->endereco}}</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label><b>TELEFONE:</b></label><label>&nbsp;{{cliente->telefone}}</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label><b>CIDADE:</b></label><label>&nbsp;{{cliente->id_cidade}}</label>
+            </div>
+        </div>
+    </div>
+</div>
+<!--[/main]-->

@@ -1,0 +1,38 @@
+<menu>
+    <menuitem label='Dashboard'>
+        <icon>fa:tachometer-alt fa-fw</icon>
+        <action>Dash</action>
+    </menuitem>
+    <menuitem label='Vendas'>
+        <icon>fa:dollar-sign fa-fw</icon>
+        <menu>
+            <menuitem label='Nova Venda'>
+                <icon>fas:plus fa-fw</icon>
+                <action>VendaForm</action>
+            </menuitem>
+
+            <menuitem label='Ver Vendas'>
+                <icon>fa:hand-holding-usd fa-fw</icon>
+                <action>VendaList</action>
+            </menuitem>
+        </menu>
+    </menuitem>
+    <menuitem label='Sincronizar'>
+        <icon>fas:sync-alt fa-fw</icon>
+        <menu>
+            <menuitem label='Receber Dados'>
+                <icon>fas:cloud-download-alt fa-fw</icon>
+                <action>MinivendasRest#method=loadAll</action>
+            </menuitem>
+
+            <menuitem label='Enviar Vendas'>
+                <icon>fas:cloud-upload-alt fa-fw</icon>
+                <action>MinivendasRest#method=uploadVendas</action>
+            </menuitem>
+        </menu>
+    </menuitem>
+    <menuitem label='Sair'>
+    <icon>fas:sign-out-alt fa-fw</icon>
+        <action>LoginForm#method=onLogout#static=1</action>
+    </menuitem>
+</menu>

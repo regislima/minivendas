@@ -1,0 +1,45 @@
+<!--[main]-->
+<div class="card">
+    <div class="card-header">
+        <div class="card-title">{{title}}</div>
+        <div class="header-actions">
+            <a class="btn btn-default" generator="adianti" href="index.php?class=DespesaDetalhes&method=onClose&static=1" style="float: right;">
+                <i class="fas fa-times red" aria-hidden="true"></i>
+                Fechar
+            </a>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col">
+                <label><b>CÓDIGO:</b></label><label>&nbsp;{{despesa->id}}</label>
+            </div>
+        </div>
+         <div class="row">
+            <div class="col">
+                <label><b>DATA DA DESPESA:</b></label><label>&nbsp;date_format({{despesa->data_created_at}}, 'd/m/Y H:i:s')</label>
+            </div>
+        </div>
+         <div class="row">
+            <div class="col">
+                <label><b>VALOR:</b></label><label>&nbsp;number_format({{despesa->valor}}, 2, ',', '.')</label>
+            </div>
+        </div>
+         <div class="row">
+            <div class="col">
+                <label><b>DATA DO CHEQUE:</b></label><label>&nbsp;date_format({{despesa->data_resgate_cheque}}, 'd/m/Y')</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label><b>FORMA DE PAGAMENTO:</b></label><label>&nbsp;{{despesa->id_forma_pagamento}}</label>
+            </div>
+        </div>
+         <div class="row">
+            <div class="col">
+                <label><b>DESCRIÇÃO:</b></label><label>&nbsp;{{despesa->descricao}}</label>
+            </div>
+        </div>
+    </div>
+</div>
+<!--[/main]-->
