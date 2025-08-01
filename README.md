@@ -20,6 +20,7 @@ Siga os passos abaixo para configurar e executar o projeto.
 ## 📦 3. Instalação das Dependências
 
 - Certifique-se de que o PHP está instalado e configurado nas variáveis de ambiente.
+  - **Obs:** Recomenda-se a instalação do PHP 7.1.0
 - Baixe o Composer através deste link: [getcomposer.org](https://getcomposer.org/download/latest-stable/composer.phar)
 - Coloque o arquivo `composer.phar` no diretório raiz do projeto.
 - Abra o terminal, navegue até o diretório do projeto e execute o seguinte comando:
